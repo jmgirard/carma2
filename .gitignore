@@ -1,0 +1,35 @@
+# dependencies
+/node_modules/
+
+# build output
+/dist/
+/out/
+/.webpack/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/project settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+
+# coverage reports
+coverage/
+*.lcov
+
+# sample video data (if you keep test videos in repo)
+/samples/videos/

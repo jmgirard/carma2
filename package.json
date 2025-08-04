@@ -1,16 +1,35 @@
 {
   "name": "carma2",
+  "description": "A local Electron app for continuous video rating",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.jmgirard.carma2",
+    "productName": "CARMA2",
+    "directories": { "output": "dist" },
+    "files": [
+      "node_modules/**/*",
+      "package.json",
+      "index.html",
+      "preload.js",
+      "main.js",
+      "renderer.js"
+    ],
+    "mac": { "target": ["dmg"] },
+    "win": { "target": ["nsis"] },
+    "linux": { "target": ["AppImage"] }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "electron": "^37.2.5"
-  }
+    "electron": "^37.2.5",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {}
 }

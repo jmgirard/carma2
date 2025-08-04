@@ -14,12 +14,12 @@ body.layout-right #layoutContainer{flex-direction:row;overflow:visible;}
 body.layout-below #sliderContainer{flex-direction:column;margin-top:8px;}
 body.layout-right #sliderContainer{flex-direction:row;align-items:center;margin-left:8px;gap:2px;}
 #gradientBar{position:relative;overflow:visible;background:linear-gradient(var(--gradient-dir,to right),var(--color1,#0f0),var(--color2,#ff0),var(--color3,#f00));}
-body.layout-below #gradientBar{width:100%;height:20px;margin-bottom:2px;}
-body.layout-right #gradientBar{width:20px;height:100%;margin-right:8px;}
+body.layout-below #gradientBar{width:100%;height:40px;margin-bottom:2px;}
+body.layout-right #gradientBar{width:40px;height:100%;margin-right:8px;}
 .min-label,.mid-label,.max-label{position:absolute;color:#000;font-size:12px;font-weight:bold;pointer-events:none;}
-body.layout-below .min-label{left:0;top:2px;padding-left:4px;}
-body.layout-below .mid-label{left:50%;top:2px;transform:translateX(-50%);}
-body.layout-below .max-label{right:0;top:2px;padding-right:4px;}
+body.layout-below .min-label{left:4px;top:50%;transform:translateY(-50%);}
+body.layout-below .mid-label{left:50%;top:50%;transform:translateY(-50%);}
+body.layout-below .max-label{right:4px;top:50%;transform:translateY(-50%);}
 body.layout-right .min-label{bottom:4px;left:50%;transform:translateX(-50%);}
 body.layout-right .mid-label{top:50%;left:50%;transform:translate(-50%,-50%);}
 body.layout-right .max-label{top:4px;left:50%;transform:translateX(-50%);}

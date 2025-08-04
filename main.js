@@ -8,17 +8,17 @@ let unsavedRatings = false;
 
 function createWindow() {
   win = new BrowserWindow({
-    width: 1000,
-    height: 700,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
       nodeIntegration: false
     }
   });
+
   win.loadFile('index.html');
   win.maximize();
 
+  // Your existing menu setup remains unchanged
   const isMac = process.platform === 'darwin';
   const template = [
     ...(isMac ? [{ label: app.name, submenu: [{ role: 'about' }, { type: 'separator' }, { role: 'quit' }] }] : []),
